@@ -41,7 +41,7 @@ public class Leitor implements Serializable {
 	@FormParam("categoriaEscolhida")
 	private CategoriaMVC categoriaEscolhida;
 	
-	@NotNull(message= "Campo 'Justificativa': Preenchimento obrigatorio")
+	@NotNull(message= "Campo 'Justificati	va': Preenchimento obrigatorio")
 	@Size(min = 5, max = 50, message="Campo 'Justificativa': Deve conter entre 5 e 50 caracteres")
 	@FormParam("justificativa")
 	private String justificativa;
