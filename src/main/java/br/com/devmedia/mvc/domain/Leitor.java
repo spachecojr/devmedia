@@ -19,7 +19,7 @@ public class Leitor implements Serializable {
 	private static final long serialVersionUID = -7174180260543631984L;
 
 	@NotNull(message="Campo 'Nome': Preenchimento obrigatorio")
-    @Size(min = 1, max = 10, message="Campo 'Nome': deve conter entre 1 e 20 letras")
+    @Size(min = 1, max = 20, message="Campo 'Nome': deve conter entre 1 e 20 letras")
     @Pattern(regexp = "[a-zA-Z]+" , message="Campo 'Nome': O valor: ${validatedValue} digitado no campo Nome e invalido, informe somente letras.")
 	@FormParam("nome")
 	private String nome;
